@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!152 &1
+EditorUserBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 4
+  m_BuildAppBundle: 0
+  m_SelectedStandaloneTarget: 2
+  m_SelectedBuildTargetGroup: 1
+  m_ActiveBuildTarget: Android
+  m_ActiveBuildTargetGroup: Android
+  m_ActiveBuildTargetGroupValue: 1
+  m_BuildScriptsOnly: 0
+  m_EnableHeadlessMode: 0
+  m_BuildWithDeepProfilingSupport: 0
+  m_BuildLocation: 
+  m_BuildTarget: 
+  m_BuildTargetGroup: 
