@@ -62,4 +62,11 @@ Packages/
 ProjectSettings/
 ```
 
+## Teste em dispositivo Android
+
+- **Como executar:** Actions > Android Debug APK > Run workflow.
+- **Download do artifact:** amazas-debug.apk.
+- **Instalação no Android:** permitir "Instalar apps desconhecidos", tocar no APK para instalar.
+- **Observações:** o primeiro build pode demorar (IL2CPP); se falhar por licença, revisar `UNITY_LICENSE`; se o app não instalar, desinstalar versões anteriores do mesmo `applicationIdentifier`.
+
 Feel free to build on this foundation for production work. Update the package identifier, company name, and product name in **Project Settings → Player** before shipping.
