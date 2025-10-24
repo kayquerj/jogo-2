@@ -1,0 +1,52 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# Generated project files
+ExportedObj/
+.obj/
+.mtl/
+*.pidb
+*.booproj
+*.suo
+*.user
+*.userprefs
+*.csproj
+*.unityproj
+*.sln
+*.sln.docstates
+*.tmp
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity crash logs
+sysinfo.txt
+
+# Cache files
+*.stackdump
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!*.meta
+
+# Auto-generated Jetbrains Rider / Visual Studio cache folders
+.idea/
+.vs/
+
+# Asset Store Tools
+AssetStoreTools*
+
+# Visual Studio Code
+.vscode/
+
+# Collaborate metadata
+**/Collab/**
+
+# Other
+.DS_Store
