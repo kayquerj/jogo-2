@@ -1,0 +1,9 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 3
+  m_Scenes: []
+  m_configObjects:
+    com.unity.render-pipelines.universal.ForwardRendererData: {fileID: 11400000, guid: 90d48f1f9dad4cb48c1a3d9efb8720f4, type: 2}
