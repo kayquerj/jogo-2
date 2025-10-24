@@ -1,4 +1,5 @@
 using System;
+using Game.Saving;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -60,10 +61,14 @@ namespace Game.Mobile
 
             moveAction?.Enable();
             sprintAction?.Enable();
+
+            GameSaveManager.Instance?.RegisterPlayerTransform(transform);
         }
 
         private void OnDisable()
         {
+            GameSaveManager.Instance?.UnregisterPlayerTransform(transform);
+
             moveAction?.Disable();
             sprintAction?.Disable();
         }
