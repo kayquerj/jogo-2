@@ -1,0 +1,53 @@
+# Unity generated folders
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+MemoryCaptures/
+
+# Asset meta data should be tracked but not the asset store tools
+AssetStore/
+
+# Visual Studio / Rider
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.vs/
+.idea/
+*.DotSettings.user
+
+# Packaging
+*.unitypackage
+
+# Crash logs
+sysinfo.txt
+
+# Builds
+*.apk
+*.aab
+*.xcodeproj
+DerivedDataCache/
+
+# Collaborate cache
+Collab/
+
+# Addressables
+AddressablesBuildPath/
+AddressablesPlayerBuildData/
+
+# Local cache
+Temp/UnityLockfile
