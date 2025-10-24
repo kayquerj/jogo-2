@@ -64,9 +64,10 @@ ProjectSettings/
 
 ## Teste em dispositivo Android
 
-- **Como executar:** Actions > Android Debug APK > Run workflow.
+- **Pré-requisito:** configure o segredo de repositório `UNITY_LICENSE` em *Settings → Secrets and variables → Actions*, colando o conteúdo do arquivo de licença Unity (retirado do portal). Ele é usado para ativar e liberar a licença durante o workflow.
+- **Como executar:** o workflow é manual (`workflow_dispatch`). Acesse Actions > Android Debug APK > Run workflow e clique em **Run workflow**.
 - **Download do artifact:** amazas-debug.apk.
 - **Instalação no Android:** permitir "Instalar apps desconhecidos", tocar no APK para instalar.
-- **Observações:** o primeiro build pode demorar (IL2CPP); se falhar por licença, revisar `UNITY_LICENSE`; se o app não instalar, desinstalar versões anteriores do mesmo `applicationIdentifier`.
+- **Observações:** o primeiro build pode demorar (IL2CPP); se falhar por licença, revise o conteúdo do `UNITY_LICENSE`; se o app não instalar, desinstale versões anteriores do mesmo `applicationIdentifier`.
 
 Feel free to build on this foundation for production work. Update the package identifier, company name, and product name in **Project Settings → Player** before shipping.

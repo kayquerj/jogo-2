@@ -2,6 +2,9 @@ name: Android Debug APK
 
 on:
   workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
 
 jobs:
   build-android-debug-apk:
@@ -21,12 +24,18 @@ jobs:
           restore-keys: |
             Library-${{ runner.os }}-
 
+      - name: Activate Unity License
+        uses: game-ci/unity-activate@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+
       - name: Unity - Build Android Debug APK
         uses: game-ci/unity-builder@v4
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: Android
+          androidAppBundle: false
           buildMethod: CI.BuildAndroidDebug.PerformBuild
 
       - name: Upload Android debug APK
@@ -34,3 +43,9 @@ jobs:
         with:
           name: amazas-debug.apk
           path: Build/Android/amazas-debug.apk
+
+      - name: Return Unity License
+        if: always()
+        uses: game-ci/unity-return-license@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
