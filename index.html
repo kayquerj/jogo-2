@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcade Orbit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="app">
+      <section
+        class="scene active"
+        data-scene="main-menu"
+        aria-labelledby="mainMenuTitle"
+      >
+        <h1 id="mainMenuTitle">Arcade Orbit</h1>
+        <p class="tagline">Collect the glowing orbs and boost your score.</p>
+        <div class="menu-actions">
+          <button class="primary" data-action="start-game">Start Game</button>
+          <button data-action="open-settings">Settings</button>
+          <button data-action="open-credits">Credits &amp; License</button>
+        </div>
+      </section>
+
+      <section
+        class="scene"
+        data-scene="game"
+        hidden
+        aria-labelledby="gameHeading"
+      >
+        <header class="hud">
+          <h2 id="gameHeading">Active Session</h2>
+          <div class="hud-right">
+            <div class="stat" aria-live="polite">
+              Score: <span id="scoreValue">0</span>
+            </div>
+            <button id="pauseButton" class="secondary">Pause</button>
+          </div>
+        </header>
+
+        <div class="game-surface">
+          <canvas
+            id="gameCanvas"
+            width="480"
+            height="320"
+            role="img"
+            aria-label="Arcade Orbit play field"
+          ></canvas>
+        </div>
+
+        <div class="touch-controls" aria-label="Touch controls">
+          <div class="dpad">
+            <button class="control-btn" data-dir="up" aria-label="Move up">
+              ▲
+            </button>
+            <div class="middle-row">
+              <button class="control-btn" data-dir="left" aria-label="Move left">
+                ◀
+              </button>
+              <span class="pad-center"></span>
+              <button class="control-btn" data-dir="right" aria-label="Move right">
+                ▶
+              </button>
+            </div>
+            <button class="control-btn" data-dir="down" aria-label="Move down">
+              ▼
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="pauseOverlay"
+          class="overlay hidden"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="pauseTitle"
+        >
+          <div class="overlay-panel">
+            <h2 id="pauseTitle">Game Paused</h2>
+            <div class="overlay-actions">
+              <button class="primary" data-action="resume-game">Resume</button>
+              <button data-action="open-settings">Settings</button>
+              <button data-action="quit-game">Quit to Main Menu</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      id="settingsModal"
+      class="modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="settingsTitle"
+    >
+      <div class="modal-panel">
+        <header class="modal-header">
+          <h2 id="settingsTitle">Settings</h2>
+        </header>
+        <form id="settingsForm" class="modal-body">
+          <label class="toggle">
+            <span>Sound Effects</span>
+            <input type="checkbox" id="audioToggle" />
+          </label>
+
+          <label class="slider" for="sensitivitySlider">
+            <span>Movement Sensitivity</span>
+            <input
+              type="range"
+              id="sensitivitySlider"
+              min="0.5"
+              max="3"
+              step="0.25"
+            />
+            <span id="sensitivityValue" aria-live="polite">1.00×</span>
+          </label>
+        </form>
+        <footer class="modal-footer">
+          <button type="button" class="primary" data-action="close-settings">
+            Close
+          </button>
+        </footer>
+      </div>
+    </div>
+
+    <div
+      id="creditsModal"
+      class="modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="creditsTitle"
+    >
+      <div class="modal-panel">
+        <header class="modal-header">
+          <h2 id="creditsTitle">Credits &amp; License</h2>
+        </header>
+        <div class="modal-body">
+          <p>
+            Arcade Orbit is a lightweight sample created to demonstrate menu
+            flows, pause handling, and persistent settings.
+          </p>
+          <h3>Team</h3>
+          <ul>
+            <li>Design &amp; Engineering: Sample Studio</li>
+          </ul>
+          <h3>Open Source Acknowledgements</h3>
+          <ul>
+            <li>
+              Powered by native web technologies &mdash; HTML, CSS, and
+              JavaScript.
+            </li>
+            <li>
+              Audio cues generated with the
+              <a
+                href="https://developer.mozilla.org/docs/Web/API/Web_Audio_API"
+                target="_blank"
+                rel="noopener"
+                >Web Audio API</a
+              >.
+            </li>
+          </ul>
+          <p>
+            Unless otherwise noted, all content is released under the
+            <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener"
+              >MIT License</a
+            >.
+          </p>
+        </div>
+        <footer class="modal-footer">
+          <button type="button" class="primary" data-action="close-credits">
+            Close
+          </button>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
