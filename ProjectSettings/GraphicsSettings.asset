@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!30 &1
+GraphicsSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 15
+  m_Deferred:
+    m_Mode: 0
+    m_Shader: {fileID: 0}
+  m_DeferredReflections:
+    m_Mode: 0
+    m_Shader: {fileID: 0}
+  m_LegacyDeferred:
+    m_Mode: 0
+    m_Shader: {fileID: 0}
+  m_DepthNormals:
+    m_Mode: 0
+    m_Shader: {fileID: 0}
+  m_MotionVectors:
+    m_Mode: 0
+    m_Shader: {fileID: 0}
+  m_LightHalo:
+    m_Mode: 0
+    m_Shader: {fileID: 0}
+  m_LensFlare:
+    m_Mode: 0
+    m_Shader: {fileID: 0}
+  m_AlwaysIncludedShaders:
+  - {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15104, guid: 0000000000000000f000000000000000, type: 0}
+  m_PreloadedShaders: []
+  m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_CustomRenderPipeline: {fileID: 11400000, guid: 7d618bff9f27433db0d7bdebd2c5f81a, type: 2}
+  m_TransparencySortMode: 0
+  m_TransparencySortAxis: {x: 0, y: 0, z: 1}
+  m_DefaultRenderingPath: 1
+  m_DefaultMobileRenderingPath: 1
+  m_TierSettings:
+  - serializedVersion: 3
+    m_BuildTarget: 4
+    m_Tier: 0
+    m_Settings:
+      standardShaderQuality: 1
+      renderingPath: 1
+      hdrMode: 1
+      realtimeGICPUUsage: 25
+      prefer32BitShadowMaps: 0
+      enableLPPV: 0
+      lightProbeProxyVolumesOverride: 0
+      autoAmbientProbeBaking: 0
+    m_Automatic: 1
+  - serializedVersion: 3
+    m_BuildTarget: 4
+    m_Tier: 1
+    m_Settings:
+      standardShaderQuality: 1
+      renderingPath: 1
+      hdrMode: 1
+      realtimeGICPUUsage: 25
+      prefer32BitShadowMaps: 0
+      enableLPPV: 0
+      lightProbeProxyVolumesOverride: 0
+      autoAmbientProbeBaking: 0
+    m_Automatic: 1
+  - serializedVersion: 3
+    m_BuildTarget: 4
+    m_Tier: 2
+    m_Settings:
+      standardShaderQuality: 1
+      renderingPath: 1
+      hdrMode: 1
+      realtimeGICPUUsage: 25
+      prefer32BitShadowMaps: 0
+      enableLPPV: 0
+      lightProbeProxyVolumesOverride: 0
+      autoAmbientProbeBaking: 0
+    m_Automatic: 1
+  m_DefaultShaderChunkCount: 4
+  m_DefaultShaderChunkSize: 16
+  m_CameraHDR: 0
+  m_CameraMSAA: 1
+  m_LODCrossFade: 0
+  m_LODCrossFadeDitheringType: 0
+  m_LogWhenShaderIsCompiled: 0
+  m_AllowEnlightenSupportForUpgradedProject: 0
+  m_LightsUseLinearIntensity: 1
+  m_LightsUseColorTemperature: 1
+  m_PreloadedShadersBatchTimeLimit: -1

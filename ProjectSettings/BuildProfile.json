@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "profiles": [
+    {
+      "name": "AndroidRelease",
+      "platform": "Android",
+      "buildPath": "Builds/Android",
+      "buildTarget": "Android",
+      "buildType": "AppBundle",
+      "options": {
+        "development": false,
+        "allowDebugging": false,
+        "connectProfiler": false,
+        "scriptsOnlyBuild": false,
+        "compression": "LZ4HC"
+      }
+    }
+  ]
+}

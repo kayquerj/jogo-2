@@ -1,0 +1,66 @@
+# This workflow is provided as a template for setting up Android builds with GameCI.
+# Uncomment and adjust the configuration to enable CI builds. Ensure that the
+# required Unity license secrets are populated in the repository or organization
+# settings before enabling the workflow.
+#
+# Required secrets:
+#   UNITY_LICENSE        - Base64 encoded Unity license file (personal/pro)
+#   UNITY_EMAIL          - Unity account email with access to the license
+#   UNITY_PASSWORD       - Password or access token for the Unity account
+#   ANDROID_KEYSTORE     - Base64 encoded keystore file (matches Player Settings)
+#   ANDROID_KEYSTORE_PASS- Password for the keystore
+#   ANDROID_KEY_ALIAS    - Keystore alias (should match PlaceholderAlias)
+#   ANDROID_KEY_ALIAS_PASS- Password for the alias
+#
+# name: Unity Android Build (Template)
+#
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - main
+#       - release/*
+#
+# jobs:
+#   build-android:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
+#
+#       - name: Cache Unity Library
+#         uses: actions/cache@v3
+#         with:
+#           path: Library
+#           key: Library-${{ runner.os }}-${{ hashFiles('**/Packages/manifest.json') }}
+#           restore-keys: |
+#             Library-${{ runner.os }}-
+#
+#       - name: Install Unity
+#         uses: game-ci/unity-install@v3
+#         with:
+#           unityVersion: 2022.3.10f1
+#           components: android
+#
+#       - name: Build Android
+#         uses: game-ci/unity-builder@v4
+#         env:
+#           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+#           UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+#           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+#           ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}
+#           ANDROID_KEYSTORE_PASS: ${{ secrets.ANDROID_KEYSTORE_PASS }}
+#           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+#           ANDROID_KEY_ALIAS_PASS: ${{ secrets.ANDROID_KEY_ALIAS_PASS }}
+#         with:
+#           targetPlatform: Android
+#           buildName: MobilePerformanceSample
+#           buildsPath: Builds
+#           buildMethod: BuildProfile.BuildAndroidRelease
+#           androidExportType: aab
+#
+#       - name: Upload Android Artifact
+#         uses: actions/upload-artifact@v4
+#         with:
+#           name: android-aab
+#           path: Builds/Android/**/*.aab

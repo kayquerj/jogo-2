@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!129 &1
+PlayerSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 26
+  productGUID: 00000000000000000000000000000000
+  companyName: DefaultCompany
+  productName: MobilePerformanceSample
+  defaultCursor: {fileID: 0}
+  cursorHotspot: {x: 0, y: 0}
+  defaultScreenOrientation: 4
+  targetDevice: 2
+  useMacAppStoreValidation: 0
+  runInBackground: 0
+  captureSingleScreen: 0
+  muteOtherAudioSources: 1
+  PrepareIOSForRecording: 0
+  ForceIOSSpeakersWhenRecording: 0
+  submitAnalytics: 1
+  usePlayerLog: 1
+  bakeCollisionMeshes: 0
+  forceSingleInstance: 0
+  resizableWindow: 0
+  useHDRDisplay: 0
+  androidFullscreenMode: 1
+  AndroidBlitType: 0
+  AndroidStartInFullscreen: 1
+  AndroidRenderOutsideSafeArea: 1
+  AndroidUseCustomKeystore: 1
+  AndroidKeystoreName: "UserProvided.keystore"
+  AndroidKeyaliasName: PlaceholderAlias
+  AndroidTargetArchitectures: 2
+  scriptingBackend:
+    Android: 1
+  managedStrippingLevel:
+    Android: 1
+  il2cppCompileConfiguration:
+    Android: 1
+  allowUnsafeCode: 0
+  activeInputHandler: 2
+  targetFrameRate: 60
+  AndroidTargetFrameRate: 60
+  m_SupportedAspectRatios:
+    4:3: 0
+    5:4: 0
+    16:9: 1
+    16:10: 1
+    Others: 0
+  bundleVersion: 0.1.0
+  AndroidBundleVersionCode: 1
+  AndroidMinSdkVersion: 23
+  AndroidTargetSdkVersion: 34
+  AndroidApplicationEntry: 1
+  AndroidForceSdCardPermission: 0
+  AndroidEnableSustainedPerformanceMode: 1
+  AndroidUseSwappy: 1
+  StripUnusedMeshComponents: 1
+  useOptimizedFrameTimingForAndroid: 1
+  m_BuildTargetGraphicsAPIs:
+  - m_BuildTarget: Android
+    m_APIs: 0a000000
+    m_Automatic: 0
+  m_BuildTargetGroupLightmapEncodingQuality:
+  - m_BuildTarget: Android
+    m_EncodingQuality: 0
+  m_BuildTargetGroupLightmapSettings:
+  - m_BuildTarget: Android
+    m_TextureCompression: 1
+  m_BuildTargetPlatformIcons: []
+  m_BuildSettings:
+    AndroidCreateAndroidManifest: 0
+    AndroidTVCompatibility: 0
+    AndroidIsGame: 1
+    AndroidEnableTango: 0
+    AndroidEnableBanner: 0
+    AndroidEnableProguard: 0
+    AndroidMinifyRelease: 1
+  SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  hideHomeButton: 0
