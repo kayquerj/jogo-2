@@ -67,3 +67,12 @@ crashlytics-build.properties
 
 # Rider plugin
 [Aa]ssets/Plugins/Editor/JetBrains*
+
+# Android build artifacts
+*.apk
+*.aab
+*.obb
+*.keystore
+*.jks
+[Bb]uilds/**/gradleOut/
+[Bb]uilds/**/LauncherGradle/
