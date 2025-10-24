@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!126 &1
+PackageManagerSettings:
+  m_ObjectHideFlags: 61
+  serializedVersion: 2
+  m_CombineRegistries: 0
+  m_EnablePreviewPackages: 0
+  m_EnablePackageDependencies: 1
+  m_AdvancedSettingsExpanded: 1
+  m_ScopedRegistriesSettingsExpanded: 0
+  m_ScopedRegistries: []
+  m_Registries:
+  - m_Id: main
+    m_Name: Unity Registry
+    m_Url: https://packages.unity.com
+    m_Scopes: []
+    m_IsDefault: 1
+  m_UserSelectedRegistry: 
+  m_RegistriesSuppressed: 0

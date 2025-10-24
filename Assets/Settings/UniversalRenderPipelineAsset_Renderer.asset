@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c0816e2b5c4f64aa98f83cd1952e6a, type: 3}
+  m_Name: UniversalRenderPipelineAsset_Renderer
+  m_EditorClassIdentifier: 
+  m_RendererFeatures: []
+  m_RendererFeatureMap: []
+  m_DefaultMaterial: {fileID: 0}
+  m_DefaultParticleMaterial: {fileID: 0}
+  m_DefaultLineMaterial: {fileID: 0}
+  m_DefaultTerrainMaterial: {fileID: 0}
+  m_DefaultDecalMaterial: {fileID: 0}
+  m_DefaultSpriteMaterial: {fileID: 0}
+  m_DefaultMeshMaterial: {fileID: 0}
+  m_UseNativeRenderPass: 0
+  m_UseRenderingLayers: 0
+  postProcessData: {fileID: 0}
+  xrSystemData: {fileID: 0}
+  m_RendererResources: {fileID: 0}
+  m_DecalDatas: {fileID: 0}
+  m_PostProcessData: {fileID: 0}
+  m_AlphaClipThreshold: 0.5
+  m_RenderingMode: 0
+  m_DepthPrimingMode: 0
+  m_DepthPrepassMode: 0
+  m_DepthNormalPassMode: 0
+  m_AccurateGbufferNormals: 0
+  m_ClusteredRendering: 0
+  m_DrawScreenSpaceShadows: 0
+  m_IntermediateTextureMode: 0
+  m_RenderingLayerMaskName: Default
+  m_StripShadowsOffVariants: 1
+  m_StripAdditionalLightVariants: 0
+  m_StripDebugVariants: 1
+  m_ShadowTransparentReceive: 1
+  m_SupportsLightLayers: 0
+  m_DebugLevel: 0
+  m_ShaderVariantLogLevel: 0
+  shaderVariantLogLevel: 0
